@@ -46,7 +46,7 @@ class PostJob extends Component {
     }
 
     try {
-      const response = await fetch("https://jobconnect-app.onrender.com/post-jobs", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/post-jobs`, {
         method: "POST",
         headers: { 
           "Content-Type": "application/json" 
