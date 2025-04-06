@@ -19,7 +19,7 @@ class Jobs extends Component {
 
   fetchJobs = async () => {
     try {
-      const response = await fetch('https://jobconnect-app.onrender.com/alljobs');
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/alljobs`);
       if (!response.ok) {
         throw new Error('Failed to fetch jobs');
       }
