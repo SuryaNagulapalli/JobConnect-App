@@ -1,0 +1,16 @@
+GET http://localhost:8000/alljobs
+
+###
+
+POST http://localhost:8000/post-jobs
+Content-Type: application/json
+
+{
+    "Title": "Data Analyst",
+    "Company": "Infosys",
+    "Location": "Hyderabad, India",
+    "Salary": 850000.00,
+    "Description": "Analyze and interpret complex data sets to improve business decisions."
+}
+
+
